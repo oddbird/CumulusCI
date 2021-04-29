@@ -1157,7 +1157,10 @@ def org_list(runtime, json_flag, plain):
             scratch_data.append(row)
             json_data[row[0]] = {
                 "isDefault": row[1],
+                "days": row[2],
+                "expired": row[3],
                 "config": row[4],
+                "domain": row[5],
                 "isScratch": True,
             }
         else:
